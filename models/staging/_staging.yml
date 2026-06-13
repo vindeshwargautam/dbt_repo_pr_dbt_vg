@@ -1,0 +1,34 @@
+version: 2
+
+
+sources:
+  - name: tpch
+    description: "TPCH sample dataset containing e-commerce transactions, customers, products, suppliers, and geographical reference data."
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+
+    tables:
+
+      - name: customer
+        description: "Stores customer master data including customer details, account balance, market segment, and nation information."
+
+      - name: orders
+        description: "Stores order-level transaction data placed by customers, including order date, status, priority, and total order value."
+
+      - name: lineitem
+        description: "Stores individual product line items for each order, including quantity, pricing, discount, tax, and shipping information."
+
+      - name: part
+        description: "Stores product master data including product name, brand, type, size, container, and retail price."
+
+      - name: supplier
+        description: "Stores supplier master data including supplier details, account balance, contact information, and nation."
+
+      - name: partsupp
+        description: "Bridge table connecting products and suppliers, containing supply cost and available inventory information."
+
+      - name: nation
+        description: "Reference table containing country information and its associated region."
+
+      - name: region
+        description: "Reference table containing geographical regions used for country-level classification."
