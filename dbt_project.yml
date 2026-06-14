@@ -1,11 +1,11 @@
 
 
-name: 'project1'
+name: 'project_DBT_GDS'
 version: '1.0.0'
 config-version: 2
 
 
-#profile: 'ecommerce_dbt'
+profile: 'prod_snowflake'
 
 
 model-paths: ["models"]
