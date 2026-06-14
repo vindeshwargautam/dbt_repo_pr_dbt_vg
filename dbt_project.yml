@@ -5,7 +5,7 @@ version: '1.0.0'
 config-version: 2
 
 
-profile: 'prod_snowflake'
+profile: 'dbt_snowflake'
 
 
 model-paths: ["models"]
@@ -18,7 +18,7 @@ snapshot-paths: ["snapshots"]
 
 
 models:
-  project1:
+  project_DBT_GDS:
       +materialized: table
 
 
